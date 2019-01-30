@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+}
+
+.layui-side {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    background: #393D49;
+}
