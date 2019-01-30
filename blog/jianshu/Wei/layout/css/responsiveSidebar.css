@@ -1,0 +1,143 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* container style */
+.container-fluid {
+    width: 100%;
+    height: 100%;
+}
+
+.container-fluid .row {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* < 600px */
+@media only screen and (max-width: 600px) {
+    .container-fluid .row .fixed-col {
+        display: none;
+    }
+
+    .container-fluid .row .fixed-col-show {
+        display: block;
+        height: 100%;
+    }
+
+    .container-fluid .row .col {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-fluid .row .col-hide {
+        width: calc(100vw - 200px);
+        height: 100%;
+    }
+}
+
+/* > 600 */
+@media only screen and (min-width: 600px) {
+    .container-fluid .row .fixed-col {
+        display: block;
+        height: 100%;
+    }
+
+    .container-fluid .row .col,
+    .col-hide {
+        width: calc(100vw - 200px);
+        height: 100%;
+    }
+}
+
+/* 
+.container-fluid .row .fixed-col {
+    display: block;
+    height: 100%;
+} 
+
+.container-fluid .row .col {
+    width: calc(100vw - 200px);
+    height: 100%;
+}
+*/
+
+/* layout style */
+.responsive-sidebar {
+    height: 100%;
+}
+
+.responsive-sidebar .sidebar {
+    width: 200px;
+    height: 100%;
+    color: #fff;
+    background: #001529;
+}
+
+.responsive-sidebar .right-col {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column;
+    height: 100%;
+    background: #f0f2f5;
+}
+
+.responsive-sidebar .header {
+    position: relative;
+    height: 54px;
+    padding: 5px 10px;
+    line-height: 54px;
+    background: #fff;
+}
+
+.responsive-sidebar .header .menu-switch {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    text-align: center;
+    width: 36px;
+    height: 42px;
+    line-height: 42px;
+    background: #192c3e;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease;
+}
+
+/* < 200px */
+@media only screen and (max-width: 600px) {
+    .responsive-sidebar .header .menu-switch {
+        display: inline-block;
+    }
+}
+
+/* > 200 */
+@media only screen and (min-width: 600px) {
+    .responsive-sidebar .header .menu-switch {
+        display: none;
+    }
+}
+
+.responsive-sidebar .main {
+    flex: 1;
+    margin: 24px 16px 0px;
+    padding: 20px;
+    background: #fff;
+}
+
+.responsive-sidebar .footer {
+    height: 24px;
+    padding: 24px 50px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+    background: #f0f2f5;
+}

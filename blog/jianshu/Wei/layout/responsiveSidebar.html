@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ResponsiveSidebar</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../layout/css/base.css">
+    <link rel="stylesheet" href="../layout/css/responsiveSidebar.css">
+</head>
+
+<body>
+    <div class="responsive-sidebar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="fixed-col" id="sidebar">
+                    <aside class="sidebar">
+                        <span>sidebar</span>
+                    </aside>
+                </div>
+                <div class="col" id="rightContent">
+                    <div class="right-col">
+                        <header class="header">
+                            <span class="menu-switch" onclick="handleClickMenuSwitch()">menu</span>
+                            <span>header</span>
+                        </header>
+                        <main class="main">content</main>
+                        <footer class="footer">author：zhangfei</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="../layout/js/app/responsiveSidebar/index.js"></script>
+</body>
+
+</html>
