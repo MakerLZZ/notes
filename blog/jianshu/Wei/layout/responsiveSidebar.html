@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ResponsiveSidebar</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="../layout/css/base.css">
     <link rel="stylesheet" href="../layout/css/responsiveSidebar.css">
 </head>
 
@@ -17,17 +16,19 @@
             <div class="row">
                 <div class="fixed-col" id="sidebar">
                     <aside class="sidebar">
-                        <span>sidebar</span>
+                        <div class="logo">logo</div>
+                        <div class="menu-item">sidebar</div>
                     </aside>
                 </div>
-                <div class="col" id="rightContent">
+                <div class="col">
                     <div class="right-col">
                         <header class="header">
-                            <span class="menu-switch" onclick="handleClickMenuSwitch()">menu</span>
+                            <span class="menu-switch" id="menuSwitch" onclick="handleClickMenuSwitch()"><img src="../layout/img/menu.png"
+                                    alt="menu"></span>
                             <span>header</span>
                         </header>
                         <main class="main">content</main>
-                        <footer class="footer">author：zhangfei</footer>
+                        <footer class="footer">footer</footer>
                     </div>
                 </div>
             </div>
