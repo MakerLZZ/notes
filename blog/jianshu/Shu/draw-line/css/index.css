@@ -1,0 +1,22 @@
+.box {
+    position: relative;
+}
+
+.right-arrow,
+.right-arrow-cover {
+    border-width: 50px 25px 50px 25px;
+    border-style: solid;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    border-color: transparent transparent transparent #000;
+}
+
+.right-arrow-cover {
+    position: absolute;
+    top: 0;
+    border-color: transparent transparent transparent #fff;
+}
